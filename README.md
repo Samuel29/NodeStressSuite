@@ -1,3 +1,16 @@
+IMPORTANT NOTE
+================
+this is a brand new fork of NodeLoad.
+This project had been idle for a while, so when I needed support for it, I decided to fork ^^
+
+In few words, this fork's main goals are
+- to make it compatible with latest versions of NodeJS, to fix HTTP issues when under heavy load.
+- add some new reporting features
+- eventually add more tools for distributed tests (based on Amazon EC2 instances)
+- ...
+
+At present work is still in progress, so stay tuned ^^
+
 INSTALLING
 ================
 
@@ -10,20 +23,20 @@ Make sure [node.js](http://nodejs.org/#download) is installed. Then install `nod
 
 2. From source:
 
-        git clone git://github.com/benschmaus/nodeload.git
+        git clone git://github.com/Samuel29/nodeload.git
         cd nodeload
         npm link    # optional. enables require('nodeload/<module>') instead of require('./lib/<module>').
 
 3. Or as a single file (this does not install the `nl.js` tool):
 
-        wget https://github.com/benschmaus/nodeload/raw/master/nodeload.js
+        wget https://github.com/Samuel29/nodeload/raw/master/nodeload.js
 
 NODELOAD
 ================
 
 `nodeload` is a collection of independent [node.js](http://nodejs.org/) modules for load testing HTTP services.
 
-As a developer, you should be able to write load tests and get informative reports without having to learn another framework. You should be able to build by example and selectively use the parts of a tool that fit your task. Being a library means that you can use as much or as little of `nodeload` as makes sense, and you can create load tests with the power of a full programming language. For example, if you need to execute some function at a given rate, just use the [`'nodeload/loop'`](https://github.com/benschmaus/nodeload/tree/master/doc/loop.md) module, and write the rest yourself.
+As a developer, you should be able to write load tests and get informative reports without having to learn another framework. You should be able to build by example and selectively use the parts of a tool that fit your task. Being a library means that you can use as much or as little of `nodeload` as makes sense, and you can create load tests with the power of a full programming language. For example, if you need to execute some function at a given rate, just use the [`'nodeload/loop'`](https://github.com/Samuel29/nodeload/tree/master/doc/loop.md) module, and write the rest yourself.
 
 In addition, `nodeload` is built for operability. It can always be deployed by simply copying the single file, `nodeload.js`.
 
@@ -50,7 +63,6 @@ The `nodeload` module is the primary interface for creating load tests. It inclu
         targetRps: 500,
         requestGenerator: function(client) {
             var request = client.request('GET', "/" + Math.floor(Math.random()*10000));
-            request.end();
             return request;
         }
     });
@@ -76,7 +88,6 @@ Create the distributed load test:
         targetRps: 500,
         requestGenerator: function(client) {
             var request = client.request('GET', "/" + Math.floor(Math.random()*10000));
-            request.end();
             return request;
         }
     });
@@ -168,4 +179,4 @@ The `http` module provides a generic HTTP server that serves static files and th
 
 CONTRIBUTING
 ================
-File bugs on [github](https://github.com/benschmaus/nodeload/issues), email any of the authors, and fork away. [doc/developers.md](https://github.com/benschmaus/nodeload/tree/master/doc/developers.md) has brief instructions on getting tests up and running, and will hold more design details in the future. Contributions are always welcome.
+File bugs on [github](https://github.com/Samuel29/nodeload/issues), email (any of) the author(s), and fork away. [doc/developers.md](https://github.com/benschmaus/nodeload/tree/master/doc/developers.md) has brief instructions on getting tests up and running, and will hold more design details in the future. Contributions are always welcome.
