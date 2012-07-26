@@ -1,4 +1,13 @@
-## v0.4.0 (HEAD) ##
+## v0.4.1-BETA (HEAD) ##
+
+* Partially compatible with node v0.8.x :
+** this update fixes instability of slaves with sockets hangups and timeouts
+** requestLoops now use a custom http.Agent & http.request({agent: myCustomAgent,...}) (instead of deprecated http.createClient / client.request methods)
+** TODO: also use this method for master/slave communication (today it raises a "deprecated" warning)
+* fix error "Object #<Client> has no method 'destroy'"
+* logs/reports files now contain valid characters for windows, and default output dir is now "./results" instead of "."
+
+## v0.4.0 ##
 
 Compatible with node v0.4.x
 
