@@ -1,9 +1,9 @@
 {
-    "name": "nodeload",
-    "version": "0.4.0",
+    "name": "nss",
+    "version": "0.4.1-BETA",
     "description": "Load testing library for node.js",
     "keywords": ["testing", "load testing", "http"],
-    "homepage": "https://github.com/benschmaus/nodeload",
+    "homepage": "https://github.com/Samuel29/NodeStressSuite",
     "engines": {
         "node": ">=0.4"
     },
@@ -11,14 +11,15 @@
         "Benjamin Schmaus <benjamin.schmaus@gmail.com>",
         "Jonathan Lee <jonjlee@gmail.com>",
         "Robert Newson <robert.newson@gmail.com>",
-        "Michael Mattozzi <mike.mattozzi@gmail.com>"
+        "Michael Mattozzi <mike.mattozzi@gmail.com>",
+        "Samuel Linclau <samuel.linclau@alenty.com>"
     ],
     "bugs": {
-        "web" : "https://github.com/benschmaus/nodeload/issues"
+        "web" : "https://github.com/Samuel29/NodeStressSuite/issues"
     },
     "repository": {
         "type": "git",
-        "url": "http://github.com/benschmaus/nodeload"
+        "url": "http://github.com/Samuel29/NodeStressSuite"
     },
     "main": "./nodeload.js",
     "bin": {
@@ -43,7 +44,7 @@
     "licenses": [
         {
             "type": "MIT",
-            "url": "https://github.com/benschmaus/nodeload/raw/master/LICENSE"
+            "url": "https://github.com/Samuel29/NodeStressSuite/raw/master/LICENSE"
         }
     ]
 }
