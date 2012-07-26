@@ -16,5 +16,4 @@ templates:
 compile: templates
 	echo "#!/usr/bin/env node" > ./nodeload.js
 	cat $(SOURCES) | ./scripts/jsmin.js >> ./nodeload.js
-	#cat $(SOURCES) >> ./nodeload.js
 	chmod +x ./nodeload.js
