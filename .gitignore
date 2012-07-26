@@ -1,5 +1,10 @@
 results-*
+results
 *.tpl.js
 .reporting.test-output.html
 tmp
 node_modules
+Vagrantfile
+.vagrant
+.project
+
