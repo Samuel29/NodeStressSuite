@@ -1,5 +1,7 @@
 IMPORTANT NOTE
 ================
+Please note that code examples might no longer work. I Will update them later.
+
 this is a brand new fork of NodeLoad.
 This project had been idle for a while, so when I needed support for it, I decided to fork ^^
 
