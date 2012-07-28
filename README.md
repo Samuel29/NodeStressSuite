@@ -23,7 +23,7 @@ Make sure [node.js](http://nodejs.org/#download) is installed. Then install `nod
 
 2. From source:
 
-        git clone git://github.com/Samuel29/nodeload.git
+        git clone git://github.com/Samuel29/NodeStressSuite.git
         cd nodeload
         npm link    # optional. enables require('nodeload/<module>') instead of require('./lib/<module>').
 
