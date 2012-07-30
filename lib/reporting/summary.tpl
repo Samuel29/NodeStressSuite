@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>Test Results</title>
@@ -38,6 +37,7 @@
         <div id="header">
             <h1>Test Results</h1>
             <p id="timestamp"><%=new Date()%></p>
+            <p id="comment"><%=comment%></p>
             <p><input type="checkbox" id="chkAutoRefresh" checked="checked" /><label for="chkAutoRefresh">Auto-refresh</label><p>
         </div>
         <div id="page">
