@@ -18,7 +18,8 @@
             #main { float:left; width: 740px; }
             #sidebar { float:right; width: 260px; height: 100%; border-left: #BFC9AE solid 1px; margin-left: 10px; padding-left: 10px;}
             #header { width: 100%; height: 120px; margin: 0px auto; color: #FFFFFF; background: #699C4D; border: 3px solid darkgreen; border-style: none none solid none;}
-            #header h1 { width: 1024; padding: 25px 0px 0px 0px; margin: 0px auto; font-weight: normal; }
+            #header h1 { width: 1024; padding: 10px 0px 0px 0px; margin: 0px auto; font-weight: normal; }
+            #comment { font-weight: bold; font-size: 18px;}
             #header p { width: 1024; padding: 15px 0px 0px 0px; margin: 0px auto; }
             #chkPause { float: right; margin-right: 10px; }
             #page { width: 1024px; margin: 0px auto; padding: 30px 0px; }
@@ -36,8 +37,8 @@
     <body>
         <div id="header">
             <h1>Test Results</h1>
-            <p id="timestamp"><%=new Date()%></p>
             <p id="comment"><%=comment%></p>
+            <p id="timestamp"><%=new Date()%></p>
             <p><input type="checkbox" id="chkAutoRefresh" checked="checked" /><label for="chkAutoRefresh">Auto-refresh</label><p>
         </div>
         <div id="page">
