@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Test Results</title>
-        <script language="javascript" type="text/javascript"><!--
+        <script type="text/javascript" type="text/javascript">
             <%=DYGRAPH_SOURCE%>
             function jsonToTable(json) {
                 var txt = "";
@@ -9,8 +10,8 @@
                     txt += "<tr><td class=label>" + i + "</td><td>" + json[i] + "</td></tr>";
                 return "<table>" + txt + "</table>";
             };
-        --></script>
-        <style><!--
+        </script>
+        <style>
             body { margin: 0px; font: 13px Arial, Helvetica, sans-serif; }
             h1 { font-size: 2.4em; }
             p, ol, ul { line-height: 30%; }
@@ -30,28 +31,28 @@
             #footer a { color: #FFFFFF; }
             .statsTable table { font-size: small; font-variant: small-caps; border-spacing: 10px 1px; }
             .statsTable .label { text-align:right; }
-        --></style>
+        </style>
     </head>
 
     <body>
         <div id="header">
             <h1>Test Results</h1>
             <p id="timestamp"><%=new Date()%></p>
-            <p><input type="checkbox" id="chkAutoRefresh" checked="true"><label for="chkAutoRefresh">Auto-refresh</label></input><p>
+            <p><input type="checkbox" id="chkAutoRefresh" checked="checked" /><label for="chkAutoRefresh">Auto-refresh</label><p>
         </div>
         <div id="page">
-            <div id="main"></div>
+            <div id="main"> </div>
             <div id="sidebar">
                 <div class="post">
                     <h2>Cumulative</h2>
-                    <div id="summaries" class="entry"></div>
+                    <div id="summaries" class="entry"> </div>
                 </div>
             </div>
         </div>
         <div id="footer"><p>generated with <a href="http://github.com/benschmaus/nodeload">nodeload</a></p></div>
     </body>
 
-    <script id="source" language="javascript" type="text/javascript">
+    <script id="source" type="text/javascript" type="text/javascript">
         var raw_reports;
         function updateDate(date) {
             document.getElementById("timestamp").innerHTML = date || new Date();
