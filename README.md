@@ -1,3 +1,6 @@
+Node Stress Suite (NSS) [![Build Status](https://secure.travis-ci.org/Samuel29/NodeStressSuite.png)](http://travis-ci.org/Samuel29/NodeStressSuite)
+===
+
 IMPORTANT NOTE
 ================
 Please note that code examples might no longer work. I Will update them later.
