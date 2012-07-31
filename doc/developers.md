@@ -6,8 +6,8 @@ First, it's recommended that [`npm`](http://npmjs.org/) is installed. Just run:
 
 The clone nodeload and run `npm link`
 
-    [~/]> git clone git://github.com/benschmaus/nodeload.git
-    [~/]> cd nodeload
+    [~/]> git clone git://github.com/Samuel29/NodeStressSuite.git
+    [~/]> cd NodeStressSuite
     [~/nodeload]> npm link
 
 which will installs the unit testing framework [expresso](http://visionmedia.github.com/expresso) and puts a symlink to `nodeload` in the node library path.
