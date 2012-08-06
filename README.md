@@ -21,7 +21,7 @@ You can find at least one working example here : [testLocal.js](https://github.c
 INSTALLING
 ================
 
-Make sure [node.js](http://nodejs.org/#download) is installed. Then install `nodeload`:
+Make sure [node.js](http://nodejs.org/#download) is installed. Then install `nss`:
 
 <del>1. Using [npm](http://npmjs.org/) : NOT YET PUBLISHED<del>
 
@@ -35,12 +35,12 @@ Make sure [node.js](http://nodejs.org/#download) is installed. Then install `nod
 
         wget https://github.com/Samuel29/NodeStressSuite/raw/master/nss.js
 
-NODELOAD
+NODE STRESS SUITE
 ================
 
-`nodeload` is a collection of independent [node.js](http://nodejs.org/) modules for load testing HTTP services.
+`nss` is a collection of independent [node.js](http://nodejs.org/) modules for load testing HTTP services.
 
-As a developer, you should be able to write load tests and get informative reports without having to learn another framework. You should be able to build by example and selectively use the parts of a tool that fit your task. Being a library means that you can use as much or as little of `nodeload` as makes sense, and you can create load tests with the power of a full programming language. For example, if you need to execute some function at a given rate, just use the [`'nodeload/loop'`](https://github.com/Samuel29/nodeload/tree/master/doc/loop.md) module, and write the rest yourself.
+As a developer, you should be able to write load tests and get informative reports without having to learn another framework. You should be able to build by example and selectively use the parts of a tool that fit your task. Being a library means that you can use as much or as little of `nodeload` as makes sense, and you can create load tests with the power of a full programming language. For example, if you need to execute some function at a given rate, just use the [`'NodeStressSuite/loop'`](https://github.com/Samuel29/NodeStressSuite/tree/master/doc/loop.md) module, and write the rest yourself.
 
 In addition, `nodeload` is built for operability. It can always be deployed by simply copying the single file, `nodeload.js`.
 
@@ -57,9 +57,9 @@ will send 10,000 queries to http://localhost:9000 using 10 connections. Statisti
 
 ### [nodeload](https://github.com/Samuel29/NodeStressSuite/tree/master/doc/nodeload.md)
 
-The `nodeload` module is the primary interface for creating load tests. It includes all the other modules described below, so if you `require('nodeload')`, you don't need to `require()` any of the other ones. Look at the examples in [`examples/loadtesting.ex.js`](https://github.com/Samuel29/NodeStressSuite/tree/master/examples/loadtesting.ex.js) and [`examples/riaktest.ex.js`](https://github.com/Samuel29/NodeStressSuite/tree/master/examples/riaktest.ex.js) or read the [nodeload module documentation](https://github.com/Samuel29/NodeStressSuite/tree/master/doc/nodeload.md).
+The `nss` module is the primary interface for creating load tests. It includes all the other modules described below, so if you `require('nodeload')`, you don't need to `require()` any of the other ones. Look at the examples in [`examples/loadtesting.ex.js`](https://github.com/Samuel29/NodeStressSuite/tree/master/examples/loadtesting.ex.js) and [`examples/riaktest.ex.js`](https://github.com/Samuel29/NodeStressSuite/tree/master/examples/riaktest.ex.js) or read the [nodeload module documentation](https://github.com/Samuel29/NodeStressSuite/tree/master/doc/nodeload.md).
 
-    var nl = require('nodeload');
+    var nl = require('nss');
     var loadtest = nl.run({
         host: 'localhost',
         port: 9000,
@@ -78,8 +78,8 @@ The `remote` module provides a mechanism for running a distributed load test. Se
 
 Start slave instances:
 
-    $ HTTP_PORT=10001 ./nodeload.js  # start a local slave instance on :10001
-    $ HTTP_PORT=10002 ./nodeload.js  # start a 2nd slave instance on :10002
+    $ HTTP_PORT=10001 ./nss.js  # start a local slave instance on :10001
+    $ HTTP_PORT=10002 ./nss.js  # start a 2nd slave instance on :10002
     
 Create the distributed load test:
 
@@ -183,4 +183,4 @@ The `http` module provides a generic HTTP server that serves static files and th
 
 CONTRIBUTING
 ================
-File bugs on [github](https://github.com/Samuel29/nodeload/issues), email (any of) the author(s), and fork away. [doc/developers.md](https://github.com/Samuel29/NodeStressSuite/tree/master/doc/developers.md) has brief instructions on getting tests up and running, and will hold more design details in the future. Contributions are always welcome.
+File bugs on [github](https://github.com/Samuel29/NodeStressSuite/issues), email (any of) the author(s), and fork away. [doc/developers.md](https://github.com/Samuel29/NodeStressSuite/tree/master/doc/developers.md) has brief instructions on getting tests up and running, and will hold more design details in the future. Contributions are always welcome.
