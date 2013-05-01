@@ -23,15 +23,24 @@ INSTALLING
 
 Make sure [node.js](http://nodejs.org/#download) is installed. Then install `nss`:
 
-<del>1. Using [npm](http://npmjs.org/) : NOT YET PUBLISHED<del>
+1. Using npm:
 
-1. From source:
+Add this to your package.json:
+
+```javascript
+        "dependencies":{
+		"nss": "git://github.com/Samuel29/NodeStressSuite.git#master"
+	}
+```
+Now, run `npm install`.
+
+2. From source:
 
         git clone git://github.com/Samuel29/NodeStressSuite.git
         cd NodeStressSuite
         npm link    # optional. enables require('nodeload/<module>') instead of require('./lib/<module>').
 
-2. Or as a single file (this does not install the `nl.js` tool):
+3. Or as a single file (this does not install the `nl.js` tool):
 
         wget https://github.com/Samuel29/NodeStressSuite/raw/master/nss.js
 
