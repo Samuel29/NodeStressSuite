@@ -27,8 +27,10 @@ Make sure [node.js](http://nodejs.org/#download) is installed. Then install `nss
 
 	Add this to your package.json:
 	```json
-        "dependencies":{
-		"nss": "git://github.com/Samuel29/NodeStressSuite.git#master"
+	{
+        	"dependencies":{
+			"nss": "git://github.com/Samuel29/NodeStressSuite.git#master"
+		}
 	}
 	```
 	Now, run `npm install`.
